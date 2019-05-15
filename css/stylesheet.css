@@ -1,7 +1,11 @@
 /*sections------------------------------------------------------------------- */
 body {
-    background-color: #EDEDED;
-    font-family:  "Segoe UI light", Georgia;
+    /*background-color: #e6e6e6;*/
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;    font-family:  "Segoe UI light", Georgia;
     color: black;
     text-align: left;
     font-size: 16px;
@@ -58,39 +62,20 @@ article img {
 
 .ParaStyle{
     font-size: 110%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Varela Round', sans-serif;
     background-color: #f9f8ec;
     color: #1F1F1F;
 }
 p.ParaStyle:first-letter{
     float: left;
     padding: 1% 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Varela Round', sans-serif;
     color:#9E273F;
     font-size: 3em;
     line-height: 0.2;
     margin: 8px 5px 0 0;
 }
 
-.video-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-iframe	{
-  width: 100%;
-  height: auto;
-}
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; 
-  height: 0; 
-}
-.video-container iframe {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  width: 100%;
-  height: 100%;
-}
     
 
 
@@ -110,7 +95,7 @@ iframe	{
 }
  @media (min-width: 60em) {
   #wrapper {
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 2fr 4fr 2fr;
 	  grid-row-gap: 0;
     grid-template-areas: 
       "banner  banner  banner"
@@ -144,7 +129,7 @@ Button1 {
     z-index: 99; 
     border: none; 
     outline: none; 
-	background-color: #9E273F;
+	background-color: #8ceeee;
     padding: 15px; 
     border-radius: 10px; 
 
@@ -161,7 +146,7 @@ input[type='checkbox'] {
   display: block;
 
   font-weight: bold;
-  font-family:'Segoe UI''Playfair Display', serif;
+font-family: 'Varela Round', sans-serif;
     font-size: 180%;
   text-transform: uppercase;
   text-align: left;
@@ -169,7 +154,7 @@ input[type='checkbox'] {
   padding: 1rem;
 
   color: #59232E;
-  background: #71C8EA;
+  background: #26BFBF;
 
   cursor: pointer;
 
@@ -198,8 +183,8 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
-  background: #f9f8ec;
-  border-bottom: 1px #71C8EA;
+
+  border-bottom: 1px #26BFBF;
 
   padding: .5rem 1rem;
 }
@@ -225,19 +210,98 @@ input[type='checkbox'] {
 }
 /*-----------Menu------------------------------------------*/
 
+
+
+
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=date]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:black;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+  border-radius: 5px;
+  background-color:grey;
+  padding: 20px;
+}
+
+
+
+
+img.TopImage{
+    width: 99.5%;
+}
+
+
+
+
+
+
 .menu {
     
-    background-color: #9E273F; 
-    font-family: 'Playfair Display', serif;
+    background-color: #048ABF; 
+font-family: 'Varela Round', sans-serif;
 }
 
 .menu a{
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: #04B2D9;
 }
 
 .dropdown {
@@ -245,14 +309,18 @@ input[type='checkbox'] {
     display: inline-block
 }
 
+.dropdown .dropdownb:hover{
+    background-color: #04B2D9;
+}
+
 .dropdown .dropdownb {
-    font-size:16px;
+    font-size:20px;
     border: none;
     outline: none;
-        background-color: #9E273F; 
+    background-color: #048ABF; 
 
     color: white;
-    padding: 14px 16px;
+
     font-family: inherit;
     margin:0;
 }
@@ -263,7 +331,7 @@ input[type='checkbox'] {
     margin: 0;
     margin-top: 0;
     width: 280px;
-    background-color: #9E273F; 
+    background-color: #048ABF; 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     float: none;
     z-index: 1;
@@ -271,33 +339,48 @@ input[type='checkbox'] {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: #71BEEA;
-    color: white;
+    background-color: #04B2D9;
+    color: #FC6170;
 }
 
 /*grid assigning----------------------------------------------*/
 
 .banner {grid-area: banner;}
 .menu {grid-area: menu;}
-nav{grid-area: menu;}
+nav{grid-area: nav;}
 table{grid-area:nav;}
 main{grid-area:main;}
 aside {grid-area: aside;}
 footer {grid-area: footer;}
 
+/*Navigation-------------------------------------------------------------------------*/
+
+.Sidebar {
+    background-color: #048ABF; 
+    font-family: 'Varela Round', sans-serif;
+}
+
+.Sidebar a{
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 /*headings------------------------------------------------------------------- */
 table{
 }
 .banner{
     display: block;
-    background-color: #9E273F;
+    background-color: #048ABF;
 }
 header{
         list-style-type: none;
 }
 h1	{
 	padding-left: 10px;
-    font-family: 'Playfair Display', serif;
+font-family: 'Varela Round', sans-serif;
     font-size: 200%;
     line-height: normal;
 	text-align: center;
@@ -308,7 +391,7 @@ h1	{
 
 }
 h2	{
-    font-family:'Segoe UI''Playfair Display', serif;
+    font-family: 'Varela Round', sans-serif;
     color: black;
     font-size: 180%;
 }
@@ -318,7 +401,7 @@ h3 	{
 }
 h4{
 
-    font-family: 'Playfair Display', serif;
+    font-family: 'Varela Round', sans-serif;
 	color: white;
 	list-style-type: none;
 	align: right;
@@ -338,6 +421,12 @@ p	{
 
 main{
 	padding-left: 5px;
+    
+
+}
+
+.mainBackGround{
+    background-color: #e6e6e6;
 }
 
 blockquote	{
@@ -355,6 +444,37 @@ blockquote	{
     margin-top: 0;
 }
 
+/*Test----------------------*/
+img.resize {
+    width: 40%;
+    height:40%;
+}
 
+.imgtable {
+    position: relative;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.column {
+  flex: 25%; 
+  max-width: 150%;
+  padding: 0 4px;
+}
+
+.inline-block-center {
+  text-align: center;
+}
+.inline-block-center div {
+  display: inline-block;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 
 

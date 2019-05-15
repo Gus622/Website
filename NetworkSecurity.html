@@ -1,0 +1,92 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en">
+<!--default language of the document content -->
+
+<head>
+<meta charset="utf-8">
+<!--character encoding for the document (Unicode) -->
+<title>Network Security</title>
+<!--web page title -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/normalise.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+<a id ="top"></a>
+<div id="wrapper"> 
+  <!--The 'wrapper' contains all the page content-->
+  <header class="banner"><!--The main heading for the page -->
+    <div class="Header">
+      <ul>
+        <li>
+            <h1>SECURITY</h1>
+        </li>
+      </ul>
+    </div>
+    
+  </header>
+  <div class ="menu">
+      <a href="index.html">Home</a>
+      <a href="NetworkSecurity.html">Network Security</a>
+      <a href="InfoSecurity.html">Information Security</a>
+      <div class="dropdown">
+          <button  class="dropdownb"><a href = "SecurityTips.html">Computer Security</a>
+              <i class="fa fa=caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="SecurityTips.html#ProtectYou">Protecting yourself online</a>
+              <a href="SecurityTips.html#2FA">Two Factor Authentication</a>
+              <a href="SecurityTips.html#SSO">Safely Shop Online</a>
+              <a href="SecurityTips.html#AR">Account Recovery</a>
+          </div>
+          
+      </div>
+      <a href="Contact.html">Contact</a>
+  </div>
+    <main class = "mainBackGround"><!--The main page content --> 
+       <h2>Network Security</h2>
+        <a><img class= "TopImage" src="images/Server_Image.jpg"></a>
+         <div class="wrap-collabsible">
+            <input id="collapsible1" class="toggle" type="checkbox" checked>
+            <label for="collapsible1" class="lbl-toggle">Business Data security</label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p>Businesses, like individuals, can be vulnerable to attacks and data breaches, this is especially bad as it is possible that Customer and employee data may have been stolen. One of the major steps to ensure security is to protect the companies network from malware, in order to do so companies firstly install antivirus software (link) that protects the network and deletes and quarantines malicious code and threats. Alongside antivirus software the company should also use a firewall for the network, it creates a buffer between the internal server and external ones in order to prevent malware from infecting the system. Most OSs tend to include a firewall so in most cases it is as simple as switching the provided one on.
+                    </p>
+                    <p>They should also limit the employee's abilities on company hardware, such as preventing them from downloading untrustworthy apps and only allowing them to download from the Play store or app store. They will also give staff (and in the case of schools, students) the minimum possible privileges required to perform their jobs, this prevents the users from downloading malware and prevents them from falling victim to phishing and other attacks.</p>
+                    <p>Companies also ensure equipment and software up to date to prevent there being any vulnerabilities in the system, applying updates to software is one of the most important things when it comes to security as it prevents malicious 3rd parties from exploiting vulnerabilities in the software. If a product is no longer supported by its provider then software must be replaced with a modern alternative that won’t be vulnerable to attacks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-collabsible">
+            <input id="collapsible1" class="toggle" type="checkbox" checked>
+            <label for="collapsible1" class="lbl-toggle">Protecting Servers from Phishing</label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p>Phishing attacks are where scammers send fake emails to people with the goal of gaining access to sensitive information, get people to send money etc. In order to avoid falling victim to these attacks you should follow these Guidelines for both users and Companies.</p>
+                    <p>Companies will normally Have layers of protection that prevent this, firstly they will make sure that users on their network are given appropriate privileges for their job. They are given the lowest possible privileges required to perform their jobs so that if a user does fall victim to a phishing or other attack the damage is minimized. only System admins should be given admin privileges that allow them to install software, make changes that affect other users and create accounts on the network. these privileges should only ever be given to IT professionals, while it restricts employees it ensures the network is secure.</p>
+                    <p>Databases for companies should also always be encrypted as they deal with large amounts of sensitive data, that if it became compromised would result in customers, users and the company itself’s data being stolen.</p>
+                </div>
+            </div>
+        </div>
+       
+       
+     
+  </main>
+    <!--Close main page content -->
+    
+  
+ 
+	
+  <footer><!--Footer content --> 
+    </footer>
+</div>
+<!--Close 'wrapper' div -->
+</body>
+<!--Close 'body' -->
+</html>
+<!--Close 'html' -->

@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <!--character encoding for the document (Unicode) -->
-<title>Index</title>
+<title>Contact</title>
 <!--web page title -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/normalise.css" rel="stylesheet">
@@ -47,21 +47,21 @@
       </div>
       <a href="Contact.html">Contact</a>
   </div>
-    <main class ="inline-block-center"><!--The main page content --> 
-       
-        <div class="imgtable">
-            <div class="column"> 
-                <a href="SecurityTips.html" > <img class = "resize" src="images/Computer%20Security.png" alt="image2"  /></a>
-                <a href="InfoSecurity.html" > <img class = "resize" src="images/Information%20Security.png" alt="image2"  /></a>
-            </div>
-              <div class="column"> 
-                <a href="NetworkSecurity.html" > <img class = "resize" src="images/Network%20Security.png" alt="image2"  /></a>
-                <a href="Contact.html" > <img class = "resize" src="images/Contact.png" alt="image2"  /></a>
-            </div>
-        </div>
-       
-     
-  </main>
+    <main class = "mainBackGround"><!--The main page content -->
+        <div id= "form">
+            <form  id="form1">
+                <fieldset>
+                    <legend>Your contact details</legend>
+                    <label for="name">First Name <em>(required)</em></label><input type="text" required id="name" />
+                    <label for="name">Last Name <em>(required)</em></label><input type="text" required id="name" />
+                    <label for="email">Email address <em>(required)</em></label><input type="email" required name="email" value="" placeholder="abc@gmail.com" pattern="[^ @]*@[^ @]*com">    
+                    <label for="message">Comments: </label><textarea id="message"></textarea>
+                    <input type="submit"  value="Click to send" />
+                </fieldset>
+            </form> 
+        </div> 
+                
+            </main><!--Close main page content -->  
     <!--Close main page content -->
     
   
