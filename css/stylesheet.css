@@ -326,6 +326,7 @@ font-family: 'Varela Round', sans-serif;
 }
 
 .dropdown-content {
+    text-align: center;
     display: none;
     position: absolute;
     margin: 0;
